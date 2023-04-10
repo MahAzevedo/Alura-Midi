@@ -5,8 +5,5 @@ function tocaSomClap() {
 }
 
 
-document.write("olá mundo!<br>");
- 
 
-
-
+document.write('25 + 25')
