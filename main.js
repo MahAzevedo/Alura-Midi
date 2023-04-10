@@ -6,3 +6,7 @@ function tocaSomClap() {
 
 
 document.write("olá mundo!<br>");
+ 
+
+
+
