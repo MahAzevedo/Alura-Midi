@@ -232,8 +232,8 @@ aquela repetição/rotina que está dentro das chaves do while será aplicada.
             parâmetro do for com uma sintaxe muito enxuta e muito bonita que é:
             contador ++ 
 */ 
-
-// Código completo, com melhoria usando ->  for
+//-----
+/*Código completo, com melhoria usando ->  for
 
 function tocaSom (idElementoAudio) {
     document.querySelector(idElementoAudio).play();
@@ -242,6 +242,31 @@ function tocaSom (idElementoAudio) {
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //let contador = 0;    não precisa mais disso aqui, pq agora está DENTRO do parâmetro
+
+for (let contador = 0; contador < listaDeTeclas.length; contador ++) {
+
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+    const idAudio = `#som_${instrumento}`; //template string
+
+    tecla.onClick = function () {
+        tocaSom(idAudio);
+    }
+
+    console.log(contador);
+
+}
+
+*/
+
+
+// Atualizado o código otimizado com for e pronto para uso:
+
+function tocaSom (idElementoAudio) {
+    document.querySelector(idElementoAudio).play();
+}
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
 for (let contador = 0; contador < listaDeTeclas.length; contador ++) {
 
