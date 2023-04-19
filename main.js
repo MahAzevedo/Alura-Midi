@@ -10,5 +10,12 @@ automatizar as nossa funcionalidades, e principalmente trabalhar com muitos
 elementos de uma vez só com LISTA DE ELEMENTOS de uma vez só
 */
 
-document.querySelectorAll('.tecla');
 
+
+//const listaDeTeclas = document.querySelectorAll('.tecla');
+
+//listaDeTeclas[0].onclick = tocaSomPom;
+
+const listaDeTeclas = document.querySelectorAll('input[type=button]');
+
+console.log(listaDeTeclas);
