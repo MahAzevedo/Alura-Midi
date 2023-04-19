@@ -1,6 +1,8 @@
+/*
 function tocaSomPom () {
     document.querySelector('#som_tecla_pom').play();
 }
+*/
 
 //document.querySelector('.tecla_pom').onclick = tocaSomPom;
 
@@ -16,6 +18,57 @@ elementos de uma vez só com LISTA DE ELEMENTOS de uma vez só
 
 //listaDeTeclas[0].onclick = tocaSomPom;
 
-const listaDeTeclas = document.querySelectorAll('input[type=button]');
+//const listaDeTeclas = document.querySelectorAll('input[type=button]');
 
-console.log(listaDeTeclas);
+//console.log(listaDeTeclas);
+
+/*
+function tocaSomPom () {
+    document.querySelector('#som_tecla_pom').play();
+}
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+let contador = 0;
+*/
+
+//enquanto
+/*
+while (contador < 9) {
+    listaDeTeclas[0].onClick = tocaSomPom;
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
+*/
+
+//atualizando:
+/*
+while (contador < listaDeTeclas.length) {
+    listaDeTeclas[contador].onClick = tocaSomPom;
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
+*/
+//-------
+
+//atualizando a function e o while:
+
+function tocaSom (idElementoAudio) {
+    document.querySelector(idElementoAudio).play();
+}
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+let contador = 0;
+
+while (contador < listaDeTeclas.length) {
+    listaDeTeclas[contador].onClick = tocaSom;
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
