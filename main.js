@@ -65,6 +65,8 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 
 let contador = 0;
 
+// atualizando e criando uma função vazia
+/*
 while (contador < listaDeTeclas.length) {
     listaDeTeclas[contador].onClick = tocaSom;
 
@@ -72,3 +74,55 @@ while (contador < listaDeTeclas.length) {
 
     console.log(contador);
 }
+*/
+
+/*
+Atualizando 
+
+while (contador < listaDeTeclas.length) {
+    listaDeTeclas[contador].onClick = function () {
+        tocaSom('#som_tecla_pom');
+    }
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
+*/
+
+/*
+Atualizando 
+
+while (contador < listaDeTeclas.length) {
+
+    const instrumento = listaDeTeclas[contador].classList[1];
+
+    console.log(instrumento);
+
+    listaDeTeclas[contador].onClick = function () {
+        tocaSom('#som_tecla_pom');
+    }
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
+*/
+
+while (contador < listaDeTeclas.length) {
+
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+
+    console.log(instrumento);
+
+    tecla.onClick = function () {
+        tocaSom('#som_tecla_pom');
+    }
+
+    contador = contador + 1;
+
+    console.log(contador);
+}
+
+
