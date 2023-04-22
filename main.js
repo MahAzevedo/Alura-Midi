@@ -387,5 +387,5 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 }
 
-// console.log()
+
 
