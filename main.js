@@ -340,7 +340,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 //------------
 
-// atualizando ocódigo ainda mais: 
+// atualizando ocódigo ainda mais: Código enxuto.
 
 function tocaSom (seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
@@ -386,6 +386,8 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     }
 
 }
+
+
 
 
 
